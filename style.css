@@ -420,7 +420,7 @@ li {
     }
 
     .container{
-        padding: 3%;
+        padding: 7% 9%;
     }
 
     .team-member {
@@ -586,7 +586,7 @@ textarea.input-style {
 .btn-submit,
 .btn-soft {
     /* Base styling */
-    padding: 12px 32px;
+    padding: 12px 22px;
     border-radius: 100px;
     font-size: 1rem;
     font-weight: 500;
@@ -993,10 +993,7 @@ blockquote {
     display: none !important;
 }
 
-/* .cc-banner {
-    z-index: 9999 !important;
-    /* Ensure the banner is on top */
-} */
+
 
 .signup-form {
     margin-top: 20px;

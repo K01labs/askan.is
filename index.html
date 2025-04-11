@@ -1,273 +1,156 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <!-- Reusable Section: Shared Across All Pages -->
-    <!-- Basic meta tags and resources that should be included everywhere -->
+<html lang="en">
 
+<head>
+    <!-- Reusable Section: Basic meta tags and resources -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Favicon and Manifest -->
+    <!-- Favicon and Manifest (Assuming these might be updated for Regava, but using Askan's for now) -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
     <link rel="manifest" href="favicons/site.webmanifest">
     <link rel="shortcut icon" href="favicons/favicon.ico">
     <meta name="msapplication-config" content="favicons/browserconfig.xml">
-    <meta name="msapplication-TileColor" content="#0B0C10">
+    <meta name="msapplication-TileColor" content="#0B0C10"> <!-- Keep theme color -->
     <meta name="theme-color" content="#0B0C10">
 
-    <!-- CSS and Fonts (Used Globally) -->
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS and Fonts (Used Globally from original style) -->
+    <link rel="stylesheet" href="style.css"> <!-- Linking the existing CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300&display=swap"
         rel="stylesheet">
-
-    <!-- AOS and Cookie Consent (Shared Functionality) -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Removed AOS and Cookie Consent links as they are not needed for this simple page -->
 
     <!-- End of Reusable Section -->
 
     <!-- Customizable Section: Unique Per Page -->
-    <!-- Specific meta tags, title, and schema for each individual page -->
-
-    <title>Askan - AI-Driven Regulatory Compliance Solutions</title>
+    <!-- Updated Title and Meta Description for Rebranding -->
+    <title>Askan is now Regava - AI-Driven Regulatory Compliance</title>
     <meta name="description"
-        content="Askan offers AI-powered regulatory compliance tools for the finance sector, providing real-time insights and proactive horizon scanning.">
+        content="Askan has rebranded to Regava. Visit our new home for AI-powered regulatory compliance solutions.">
 
-    <!-- Open Graph and Twitter (Customizable per page) -->
-    <meta property="og:title" content="Askan" />
-    <meta property="og:description" content="Stay Ahead with Askan’s AI Compliance." />
-    <meta name="twitter:image" content="assets/logo-askan-small.png" />
-    <meta property="og:url" content="https://askan.is" />
+    <!-- Simplified Open Graph and Twitter (Reflecting Rebrand) -->
+    <meta property="og:title" content="Askan is now Regava" />
+    <meta property="og:description" content="We've evolved! Visit Regava for cutting-edge AI compliance solutions." />
+    <meta property="og:url" content="https://regava.com" /> <!-- Point OG URL to the new domain -->
     <meta property="og:type" content="website" />
-    <meta name="twitter:image" content="assets/logo-askan-small.png" />
+    <!-- Optional: Add a new Regava logo URL if available -->
+    <!-- <meta name="twitter:image" content="URL_TO_REGAVA_LOGO" /> -->
 
-    <!-- Page-specific structured data (Schema) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Askan",
-      "url": "https://askan.is",
-      "logo": "https://askan.is/assets/logo-askan-small.png",
-      "description": "AI-driven regulatory compliance solutions.",
-      "founders": [
-        {
-            "@type": "Person",
-            "name": "Arinbjörn Kolbeinsson",
-            "jobTitle": "Co-Founder",
-            "url": "https://arinbjorn.is",
-            "sameAs": "https://linkedin.com/in/arinbjorn"
-        },
-        {
-            "@type": "Person",
-            "name": "Benedikt Kolbeinsson",
-            "jobTitle": "Co-Founder",
-            "url": "https://benediktkolbeinsson.is",
-            "sameAs": "https://www.linkedin.com/in/benedikt/"
-        }
-      ]
-    }
-    </script>
+    <!-- Removed complex Schema.org data -->
     <!-- End of Customizable Section -->
 
+    <style>
+        /* Inline styles for adjustments specific to this simple page */
+        body {
+            justify-content: center;
+            /* Center content vertically */
+            min-height: 100vh;
+            /* Ensure body takes full viewport height */
+        }
+
+        .main {
+            padding-top: 0;
+            /* Remove default padding-top */
+            justify-content: center;
+            /* Center content vertically within main */
+            text-align: center;
+            /* Center text within main */
+            max-width: 60rem;
+            /* Limit content width for readability */
+        }
+
+        .title {
+            min-height: auto;
+            /* Override min-height from original CSS */
+            padding-bottom: 2rem;
+            /* Add some space below the text */
+        }
+
+        h1.rebrand-title {
+            font-size: 3.5rem;
+            /* Slightly adjust size if needed */
+            margin-bottom: 1rem;
+        }
+
+        .logo-text.rebrand-text {
+            font-size: 1.5rem;
+            /* Adjust size */
+            max-width: 45rem;
+            /* Limit width */
+            margin: 0 auto 2rem auto;
+            /* Center and add bottom margin */
+            color: #C5C6C7;
+            /* Lighter text color for contrast */
+        }
+
+        .btn-link {
+            margin-top: 1rem;
+            /* Add space above button */
+        }
+
+        /* Optional: Add a subtle fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .main>.title {
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
 </head>
 
-
 <body>
-    <nav>
-        <ul class="nav-list">
-            <li class="nav-item">
-                <a href="index.html" class="k01 active">
-                    𝌭 Askan
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="index.html#About">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="index.html#Team">Team</a>
-            </li>
-            <li class="nav-item">
-                <a href="product.html">Product</a>
-            </li>
-            <!-- <li class="nav-item">
-                <a href="consulting.html">Consulting</a>
-            </li> -->
-            <li class="nav-item">
-                <a href="request.html">Request access</a>
-            </li>
-            <li class="nav-item">
-                <a href="https://beta.askan.is">Sign in</a>
-            </li>
-        </ul>
-    </nav>
+    <!-- No <nav> needed -->
 
+    <!-- Keep the background gradients for visual consistency -->
     <div class="background">
         <div class="gradient gradient-body"></div>
         <div class="gradient gradient-body gradient-two"></div>
         <div class="gradient gradient-body gradient-three"></div>
         <div class="gradient gradient-body gradient-four"></div>
-        <!-- <div class="gradient gradient-body gradient-five"></div>
-        <div class="gradient gradient-body gradient-six"></div>
-        <div class="gradient gradient-body gradient-seven"></div> -->
+        <!-- Removed gradients 5, 6, 7 for simplicity if desired -->
     </div>
 
     <div class="main">
 
-        <!-- <div class="title k01"></div> -->
-
         <div class="title">
-            <h1>𝌭
-                Askan</h1>
-            <div class="logo-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
-                At Askan, we’re <span class="lava-text">transforming regulatory compliance</span> with AI-driven solutions.
-                <br><br>Led by PhDs from Imperial College London, we combine <span class="lava-text">proactive horizon
-                    scanning</span> with <span class="lava-text">regulatory analysis</span> to keep your business ahead of the curve.
+            <!-- Updated heading using lava-text for the new name -->
+            <h1 class="rebrand-title">Askan is now <span class="lava-text">Regava</span></h1>
+            <div class="logo-text rebrand-text">
+                We're excited to announce our evolution! Askan has rebranded to Regava, reflecting our continued
+                commitment to pioneering AI-driven regulatory compliance solutions.
             </div>
-            <div class="btn-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
-            <a href="request.html" class="btn-link">
-                <button type="submit" class="btn-soft">Request access</button>
+            <!-- Button linking to the new domain -->
+            <a href="https://regava.com" class="btn-link">
+                <button type="button" class="btn-submit">Regava.com</button>
+                <!-- Changed type to button as it's just a link -->
             </a>
-            <!-- <a href="request.html" class="btn-link">
-                <button type="submit" class="btn-soft">Learn more</button>
-            </a> -->
-            </div>
         </div>
 
-        <!-- <div class="vertical container" id="About">
-        
-      </div> -->
+    </div><!-- /.main -->
 
-            <div class="dual" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                <div class="vertical container" id="About">
-                    <h2 class="right">Our work</h2>
-                    <p>We specialise in creating AI-driven regulatory compliance solutions tailored for the finance sector. Our innovative
-                    platform intelligently navigates complex financial regulations, providing proactive horizon scanning and real-time
-                    compliance insights. Through our work, we empower financial institutions to manage regulatory challenges efficiently,
-                    ensuring compliance, operational excellence and strategic foresight.</p>
-                </div>
-            </div>
-
-            <!-- <div class="dual">
-                <div class="vertical container odd" id="Team">
-                    <div class="subtitle">Team</div>
-                    <p>
-                        Arinbjörn and Benedikt Kolbeinsson, the co-founders of Askan, are distinguished alumni of Imperial College
-                        London, where they each earned their PhDs in machine learning. Arinbjörn, renowned for his contributions in healthtech and
-                        global AI research, complements Benedikt's expertise in computer vision, which has been instrumental in projects like
-                        the Icelandic COVID-19 Taskforce and innovations in autonomous vehicles. 
-                        
-                        <br><br>Together, they embody a synergy of
-                        cutting-edge AI
-                        methodologies and practical applications, steering the course of AI-driven automation across
-                        sectors.
-            
-                    </p>
-                </div>
-            </div> -->
-
-        <div class="dual" id="Team" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-            <div class="vertical container odd">
-                <h2>Team</h2>
-                <div class="team-member">
-                    <div class="member-photo">
-                        <img src="assets/images/arinbjorn.webp" alt="Arinbjörn Kolbeinsson, PhD, AI expert at Askan">
-                    </div>
-                    <div class="member-info">
-                        <h3>Dr. Arinbjörn Kolbeinsson</h3>
-                        <h4>Co-founder</h4>
-                        <p>A machine learning expert with a PhD in deep learning from Imperial College London, with experience at Evidation Health, Samsung AI and
-                        as a visiting scholar at the University of Virginia. He has published over 20 academic papers and holds a BA in law from
-                        the University of Iceland, solidifying his dual expertise in AI and law.</p>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="member-photo">
-                        <img src="assets/images/benedikt.jpg" alt="Benedikt Kolbeinsson, PhD, AI expert at Askan">
-                    </div>
-                    <div class="member-info">
-                        <h3>Dr. Benedikt Kolbeinsson</h3>
-                        <h4>Co-founder</h4>
-                        <p> A recent PhD graduate from Imperial College London, Benedikt specializes in machine learning and computer vision, with a
-                        focus on autonomous technologies. His research combines theoretical innovations in deep learning with practical AI
-                        applications. Benedikt's diverse experience includes leading an award-winning team in AI development and applying
-                        machine learning to solve critical business and public sector challenges. Additionally, his internship at LOGOS legal
-                        services provides him with unique insights into the intersection of AI and the legal industry.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="dual">
-            <div class="vertical container odd" id="Art" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                <sub>Product</sub>
-                <h2>Askan Intelligence</h2>
-                <p>Streamline complex regulatory landscapes with our advanced AI solutions. Achieve seamless compliance, minimize
-                operational risks and stay ahead of regulatory changes with ease.</p>
-                <a href="product.html" class="btn-link">
-                    <button class="btn-submit">Learn more</button>
-                </a>
-            </div>
-            <div class="vertical container odd bgimage img2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                <div class="subtitle"></div>
-            </div>
-        </div>
-
-        <div class="dual">
-            <div class="vertical container odd" id="Art" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                <sub>Product</sub>
-                <h2>Horizon</h2>
-                <p>Horizon scans the regulatory landscape, using Askan’s proprietary AI models to monitor and analyze upcoming changes.
-                Tailored alerts keep your firm ahead of compliance challenges, making adherence effortless.</p>
-                <a href="product.html" class="btn-link">
-                    <button class="btn-submit">Learn more</button>
-                </a>
-            </div>
-            <div class="vertical container odd" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                <sub>Research</sub>
-                <h2>Driving Innovation in AI+Law</h2>
-                <p>At Askan, our research pushes the boundaries of AI in the legal sector. We are shaping the future of AI-driven legal solutions through cutting-edge studies and real-world
-                    applications.</p>
-                    <!-- italic text --> 
-                     <p><i>Coming soon.</i></p>
-                <!-- <div class="btn-link">
-                    <button class="btn-soft btn-soft-disabled">Coming soon</button>
-                </div> -->
-            </div>
-        </div>
-
-        <div class="dual">
-            <div class="vertical container odd bgimage" id="Art" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                <div class="subtitle"></div>
-  
-            </div>
-            <div class="vertical container odd" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                <h2>Get Started</h2>
-                <p>Discover how Askan transform your approach to compliance. Contact us today
-                    for a personalised demo and see how our tools can help your business thrive in a complex regulatory
-                    environment.</p>
-                <a href="request.html" class="btn-link">
-                    <button type="submit" class="btn-submit">Request access</button>
-                </a>
-            </div>
-        </div>
-
-    <div class="footer" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="400" data-aos-offset="0">
+    <!-- Keep the footer, update company name and details -->
+    <div class="footer">
         <p class="footer-font">
-            Copyright &copy; 2025 Askan. All rights reserved. <a href="privacy-policy.html" class="footer-link">Privacy policy</a>.<br>
-            Askan Limited is a company registered in
-            England and Wales (No. 15885460).
+            Copyright © 2024 Regava. All rights reserved. <a href="privacy-policy.html" class="footer-link">Privacy
+                policy</a>.<br>
+            Regava is a trading name of Askan Limited, a company registered in <!-- Update if company details changed -->
+            England and Wales (No. 15885460). <!-- Update company number if it changed -->
         </p>
     </div>
-    <script src="scripts/main.js"></script>
+    <!-- Removed main.js script link as it's likely not needed -->
 </body>
 
 </html>
